@@ -1,65 +1,44 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+    <img src="https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/empresa/logo/77018/Nova_marca_-_Zamix_Prancheta_1.png" alt="Logo Zamix">
 </p>
 
-## About Laravel
+## Projeto Inventory
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+### Instruções para Clonar o Repositório
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. Clone o repositório:
+    ```bash
+    git clone git@github.com:julianoborel/inventory.git
+    cd inventory
+    ```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+2. Atualize as dependências do Composer:
+    ```bash
+    composer install
+    ```
 
-## Learning Laravel
+3. Configure seu banco de dados no arquivo `.env` e execute as migrações:
+    ```bash
+    php artisan migrate
+    ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+### Especificações do Projeto
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+#### Tecnologias Utilizadas
 
-## Laravel Sponsors
+- **PHP**: 7.1
+- **Laravel**: 5.6
+- **MySQL**: 5.7
+- **Composer**: 2.2
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+#### Funcionalidades do Sistema
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+- **Gerenciamento de Produtos**: Cadastro e edição de produtos simples e compostos.
+- **Controle de Estoque**: Atualização automática de estoque com base nas requisições.
+- **Relatórios**: Geração de relatórios de entrada e saída de estoque.
+- **Autenticação**: Implementação de autenticação básica utilizando o Laravel Passport para APIs.
+- **Validação de Dados**: Validações manuais nos controladores e utilizando `FormRequest` para requisições complexas.
 
-## Contributing
+### Resumo das Funcionalidades
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Este sistema foi desenvolvido para gerenciar o controle de estoque de uma empresa. Entre suas funcionalidades principais estão o cadastro e a edição de produtos, sejam eles simples ou compostos, a gestão de requisições de entrada e saída de produtos, e a geração de relatórios detalhados sobre o estoque. O sistema também possui um robusto mecanismo de autenticação e validação de dados, garantindo a segurança e a integridade das informações.
